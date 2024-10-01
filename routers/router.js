@@ -4,10 +4,10 @@ const controller = require('../controllers/controller');
 
 
 router.get('/list_movies', controller.listMovies)
-//router.get('/:category', controller.listMoviesCategory)
+router.get('/category/:categoria', controller.listMoviesCategory)
 router.post('/create', controller.accessMovie)
 router.put('/:id', controller.updateMovie)
-// router.delete('/:id', controller.deleteMovie)
+router.delete('/:id', controller.deleteMovie)
 
 
 module.exports = router
